@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f40c28a478.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="images/My logo (1).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="hide-icon" onclick="closemenu()"></i>    
+                </ul>
+                <i class="fa-solid fa-bars" id="hide-icon" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="container4">
+                <div class="box4 intro">
+                    <p>Frontend Developer</p>
+                    <h1>Hi, I'm <span class="Highlight">Swapnil</span><br> Nichal from India</h1>
+                </div>
+                <div class="box4 myimage"></div>
+            </div>              
+        </div>
+    </div>
+    <!-- --------------About--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   <img src="images/your pic.jpg" >
+                </div>
+                <div class="about-col-2">
+                   <h1 class="sub-title">About Me</h1>
+                   <p>Welcome to my portfolio site! I'm a frontend developer passionate about creating stunning and interactive user experiences. With expertise in HTML, CSS, and JavaScript, I craft websites and applications that excel in both design and functionality. My experience includes responsive design, cross-browser compatibility, and performance optimization. I thrive in collaborative environments and continuously seek to learn and grow. Let's connect and explore exciting projects together! Thank you for visiting!</p>
+                   <div class="sub-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Figma,adobe</li>
+                        <li><span>Web Developement</span><br>HTML, CSS, JavaScript, TypeScript, JSX</li>
+                        <li><span>Libraries and Frameworks</span><br>ReactJs, ExpressJs, Bootstrap, Materialize</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br>Looking for an opportunity to work.</li>
+                        <!-- <li><span>2020 - 2021</span><br>tean lead at LLC startup</li>
+                        <li><span>2019</span><br>internship at XYZ company</li> -->
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Bsc Computer Science from Kaveri college of arts, commerce and science</li>
+                        <li><span>2018</span><br>HSC from Sou. Vimalabai Garware college</li>
+                        <li><span>2016</span><br>SSC Jai Hind School</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Transform your ideas into fully functional websites with my web development services. Using the latest technologies, I build responsive and scalable websites that perform flawlessly across devices. Whether you need a dynamic single-page application or a robust e-commerce platform, I've got you covered. Let's bring your web vision to life!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Enhance your digital presence with captivating UI/UX designs. I specialize in creating visually appealing and intuitive user interfaces that elevate your website or app. From wireframing to prototyping, I ensure a seamless user experience that leaves a lasting impression on your audience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ea ipsa repudiandae ducimus itaque voluptates! Autem at reiciendis non numquam ex iste quo. Eaque quo veniam molestias asperiores voluptate. Temporibus facilis qui culpa.</p>
+                    <a href="#">Learn More</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- --------------portfolio-------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h2 style="margin-bottom: 15px;">Instagram Clone</h2>
+                        <p>Introducing my Instagram Clone Site: Experience the thrill of social sharing like never before! My platform replicates the essence of Instagram, allowing users to share photos, connect with friends, and explore inspiring content. With a user-friendly interface and cutting-edge features, it's the perfect space to unleash your creativity and engage with a vibrant community.<br> Join now !</p>
+                        <a href="https://ill-gray-armadillo-fez.cyclic.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h2 style="margin-bottom: 15px;">Landing Page of Boomingbulls.com (static) </h2>
+                        <p>This is a clone of a boomingbulls website ,which is a trading firm. that provides both online and offline courses on stock market. this site is Simple, responsive and has user-friendly interface</p>
+                        <a href="https://boomingbullsclone.tiiny.site/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h2 style="margin-bottom: 15px;">Weather App</h2>
+                        <p> this site displays live weather conditions like temperature, humidity, and wind speed of any city in the world. this site is Simple, responsive and has user-friendly interface. </p>
+                        <a href="https://swapnilnichal.github.io/weather-app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <!-- --------------------contact------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                     <h1 class="sub-title">Contact Me</h1>
+                     <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:swapnilnichal18@gmail.com" class="contactLink">swapnilnichal18@gmail.com</a></p>
+                     <p><i class="fa-solid fa-square-phone"></i><a href="tel:+919175487047" class="contactLink">+91 9175487047</a></p>
+                     <div class="social-icons">
+                        <a href="https://wa.link/q5bf9b"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/_s.w.a.p.n.i.l_______/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/swapnilnichal"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/swapnil-nichal-85351a270/"><i class="fa-brands fa-linkedin"></i></a>
+                     </div>
+                     <a href="images/Swapnil_Nichal_resume_2023.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                     <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Emaid Id" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                     </form>
+                     <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Swapnil. Made with <i class="fa-solid fa-heart"></i> by Swapnil Nichal</p>
+        </div>
+      </div>
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+       function closemenu(){
+        sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyMpp5eNnNJ-rzIEodmnKDXeURhZxqtaZSKL-cQldLJwTS2R_mLNoyuoiyiP4I6cFD6DQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully !"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
