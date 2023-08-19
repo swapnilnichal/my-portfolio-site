@@ -19,13 +19,16 @@ body {
     background-size: cover;
 }
 .container{
-    margin: 10px 10%;
+    margin: 10px 5%;
 }
 nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #080808;
 }
 .logo {
     width: 220px;
